@@ -12,4 +12,4 @@ urlpatterns = [
     path('', views.index, name='home'),
     path('', include(router.urls)),
 ]
-
+print('hi')
