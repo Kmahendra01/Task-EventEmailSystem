@@ -2,7 +2,7 @@ from rest_framework import viewsets
 from django.http import HttpResponse
 from .models import EventType, Employee, Event
 from .serializers import EventTypeSerializer, EmployeeSerializer, EventSerializer
-
+# def
 def index(request):
     return HttpResponse("Welcome Event Email System")
 
@@ -17,6 +17,7 @@ class EmployeeViewSet(viewsets.ModelViewSet):
 class EventViewSet(viewsets.ModelViewSet):
     queryset = Event.objects.all()
     serializer_class = EventSerializer
+
 
 
 
